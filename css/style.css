@@ -1,0 +1,15 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+}
+
+.wrapper {
+  padding-inline: 1rem;
+  max-inline-size: 75rem;
+  margin-inline: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
