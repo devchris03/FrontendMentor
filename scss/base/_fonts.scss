@@ -1,0 +1,42 @@
+// FUENTES ESTATICAS
+@font-face {
+    font-family: "Roboto";
+    src:
+        url("../assets/font/Roboto-Regular.woff2") format("woff2"),
+        url("../assets/font/Roboto-Regular.woff") format("woff"),
+        url("../assets/font/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src:
+        url("../assets/font/NotoSerifCondensed-Regular.woff2") format("woff2"),
+        url("../assets/font/NotoSerifCondensed-Regular.woff") format("woff"),
+        url("../assets/font/NotoSerifCondensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src:
+        url("../assets/font/NotoSerifCondensed-Bold.woff2") format("woff2"),
+        url("../assets/font/NotoSerifCondensed-Bold.woff") format("woff"),
+        url("../assets/font/NotoSerifCondensed-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+// FUENTE VARIABLE
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: "Noto Serif";
+        src:
+            url("../assets/font/NotoSerif-Regular.woff2") format(woff2) tech(variations),  /* Sintaxis moderna */
+            url("../assets/font/NotoSerif-Regular.woff2") format("woff2-variations");
+        font-weight: 100 900;
+    }
+}
+

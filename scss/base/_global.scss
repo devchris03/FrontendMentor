@@ -1,9 +1,13 @@
+@use './fonts' as f;
+@use './variable' as v;
+
 html {
     font-size: 16px;
 }
 
 body {
     margin: 0px;
+    font-family: v.$fontPrimary;
 }
 
 .wrapper {
