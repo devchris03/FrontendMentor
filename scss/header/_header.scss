@@ -1,0 +1,32 @@
+@use '../base/variable' as v;
+@use '../base/minxis' as m;
+
+.header {
+
+    padding-block: 1.5rem;
+    margin-block-end: 1rem;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-weight: 700;
+    }
+
+    @include m.tablet {
+
+        &__logo {
+            font-size: 1.25rem;
+        }
+
+        & .redes {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+    }
+}

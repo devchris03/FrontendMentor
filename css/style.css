@@ -1,25 +1,25 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../assets/font/Roboto-Regular.woff2") format("woff2"), url("../assets/font/Roboto-Regular.woff") format("woff"), url("../assets/font/Roboto-Regular.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("../assets/font/Inter28pt-Regular.woff2") format("woff2"), url("../assets/font/Inter28pt-Regular.woff") format("woff"), url("../assets/font/Inter_28pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Noto Serif";
-  src: url("../assets/font/NotoSerifCondensed-Regular.woff2") format("woff2"), url("../assets/font/NotoSerifCondensed-Regular.woff") format("woff"), url("../assets/font/NotoSerifCondensed-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Noto Serif";
-  src: url("../assets/font/NotoSerifCondensed-Bold.woff2") format("woff2"), url("../assets/font/NotoSerifCondensed-Bold.woff") format("woff"), url("../assets/font/NotoSerifCondensed-Bold.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("../assets/font/Inter28pt-Bold.woff2") format("woff2"), url("../assets/font/Inter28pt-Bold.woff") format("woff"), url("../assets/font/Inter_28pt-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/font/Inter28pt-Black.woff2") format("woff2"), url("../assets/font/Inter28pt-Black.woff") format("woff"), url("../assets/font/Inter_28pt-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 @supports (font-variation-settings: normal) {
   @font-face {
-    font-family: "Noto Serif";
-    src: url("../assets/font/NotoSerif-Regular.woff2") format(woff2) tech(variations), url("../assets/font/NotoSerif-Regular.woff2") format("woff2-variations");
+    font-family: "Inter";
+    src: url("../assets/font/Inter-Regular.woff2") format(woff2) tech(variations), url("../assets/font/Inter-Regular.woff2") format("woff2-variations");
     font-weight: 100 900;
   }
 }
@@ -29,13 +29,70 @@ html {
 
 body {
   margin: 0px;
-  font-family: "Roboto";
+  font-family: "Inter";
+  background-image: image-set(url("../assets/img/background.avif") type("image/avif"), url("../assets/img/background.webp") type("image/webp"), url("../assets/img/background.png") type("image/png"));
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #2a1d42;
+  color: #EEF0F1;
 }
 
 .wrapper {
   padding-inline: 1rem;
   max-inline-size: 75rem;
   margin-inline: auto;
+}
+
+.color {
+  color: #a574ff;
+  display: inline-block;
+}
+
+.header {
+  padding-block: 1.5rem;
+  margin-block-end: 1rem;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    font-size: 1.25rem;
+  }
+  .header .redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
+.hero__title {
+  text-align: center;
+  font-weight: 900;
+}
+.hero__description, .hero__help {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+@media (min-width: 480px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 4.5rem;
+  }
+  .hero__description, .hero__help {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

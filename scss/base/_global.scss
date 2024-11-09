@@ -7,11 +7,25 @@ html {
 
 body {
     margin: 0px;
-    font-family: v.$fontPrimary;
+    font-family: v.$fontFamily;
+    background-image: image-set(
+        url('../assets/img/background.avif') type('image/avif'),
+        url('../assets/img/background.webp') type('image/webp'),
+        url('../assets/img/background.png') type('image/png')
+    );
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: v.$colorPurple;
+    color: v.$colorWhite;
 }
 
 .wrapper {
     padding-inline: 1rem;
     max-inline-size: 75rem;
     margin-inline: auto;
+}
+
+.color {
+    color: v.$colorPurpleLight;
+    display: inline-block;
 }
