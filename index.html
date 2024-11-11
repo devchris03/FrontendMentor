@@ -23,16 +23,40 @@
     <div class="hero">
         <div class="hero__wrapper wrapper">
             <h1 class="hero__title">Challege's <span class="color">Frontend Mentor</span></h1>
-            <p class="hero__description">Este proyecto tiene como fin poner en practica mis habilidades en las tecnologias HTML, CSS Y JS. Cada proyecto realizado es un paso más en mi camino como Frontend.</p>
+            <p class="hero__description">
+                Este proyecto tiene como fin poner en práctica mis habilidades en las tecnologías HTML, CSS y JS. Cada proyecto realizado es un paso más en mi camino como frontend.</p>
             <p class="hero__help">Si deseas poner a prueba tus conocimientos, te dejo la página <a href="https://www.frontendmentor.io/challenges" class="link color" target="_blank" aria-label="Ir a la web de Frontend Mentor"> Frontend Mentor</a>.</p>
         </div>
     </div> <!-- hero -->
 
     <main class="proyects">
+        <h2 class="proyects__title">Mis proyectos</h2>
         <div class="proyects__wrapper wrapper">
-            
+            <article class="proyectCard">
+                <div class="proyectCard__image">
+                    <picture>
+                        <source srcset="./assets/img/qr-code.avif" type="image/avif">
+                        <source srcset="./assets/img/qr-code.webp" type="image/webp">
+                        <img loading="lazy" class="proyectCard__img" src="./assets/img/qr-code.png" width="274"height="288" alt="Proyecto QR code visualizado con mobile y desktop">
+                    </picture>
+                </div> <!-- imagen -->
+                <div class="proyectCard__details">
+                    <h3 class="proyectCard__title">Código QR</h3>
+                    <p class="proyectCard__description">Consiste en mostrar un card con un qr en su interior el cual debe ser adaptado a las pantallas</p>
+                </div> <!-- details -->
+                <div class="proyectCard__buttons">
+                    <a href="https://devchris03.github.io/qr-code/" target="_blank" aria-label="Haz click aqui para ver el deploy del proyecto " class="buttonIcon buttonIcon--primary">
+                        <img src="./assets/img/icon-github.svg" alt="Icono" width="24" height="24">
+                        <span>Ver proyecto</span>
+                    </a>
+                    <a href="https://github.com/devchris03/qr-code" target="_blank" aria-label="Haz click aquí para navegar al repositorio(Git hub) del proyecto" class="buttonIcon buttonIcon--secundary">
+                        <img src="./assets/img/icon-send.svg" alt="Icono" width="24" height="24">
+                        <span>Ver código</span>
+                    </a>
+                </div> <!-- botones -->
+            </article> <!-- proyecto -->
         </div>
-    </main>
+    </main> <!-- proyectos lista-->
     
 </body>
 </html>

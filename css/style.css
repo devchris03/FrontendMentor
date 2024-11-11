@@ -95,4 +95,66 @@ body {
   }
 }
 
+.proyects {
+  padding-block: 2rem;
+}
+.proyects__title {
+  text-align: center;
+}
+.proyects__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+}
+
+.proyectCard {
+  padding: 1rem 1rem 2rem 1rem;
+  background: rgba(238, 240, 241, 0.1);
+  box-sizing: border-box;
+  border-radius: 2rem;
+}
+.proyectCard__image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.proyectCard__img {
+  inline-size: 100%;
+  aspect-ratio: 0.95;
+}
+.proyectCard__description {
+  opacity: 0.5;
+}
+.proyectCard__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: transparent;
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+.buttonIcon--primary {
+  color: #EEF0F1;
+  background: #2a1d42;
+  box-shadow: 0 0 20px rgba(134, 97, 203, 0.6);
+}
+.buttonIcon--secundary {
+  background: #a574ff;
+  color: #2a1d42;
+}
+.buttonIcon__text {
+  text-decoration: none;
+  color: #EEF0F1;
+}
+
 /*# sourceMappingURL=style.css.map */

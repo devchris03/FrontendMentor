@@ -1,0 +1,32 @@
+@use '../base/variable' as v;
+
+.buttonIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: transparent;
+    inline-size: 100%;
+    box-sizing: border-box;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    
+    &--primary {
+        color: v.$colorWhite;
+        background: v.$colorPurple;
+        box-shadow: 0 0 20px rgba(#8661cb, $alpha: 60%);
+    }
+
+    &--secundary {
+        background: v.$colorPurpleLight;
+        color: v.$colorPurple;   
+    }
+
+    &__text {
+        text-decoration: none;
+        color: v.$colorWhite;
+    }
+}

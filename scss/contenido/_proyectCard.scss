@@ -1,0 +1,28 @@
+@use '../base/variable' as v;
+
+.proyectCard {
+    padding: 1rem 1rem 2rem 1rem;
+    background: rgba(v.$colorWhite, $alpha: .1);
+    box-sizing: border-box;
+    border-radius: 2rem;
+
+    &__image {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    &__img {
+        inline-size: 100%;
+        aspect-ratio: 0.95;
+    }
+
+    &__description {
+        opacity: .5;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
