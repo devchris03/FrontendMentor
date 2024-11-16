@@ -1,12 +1,30 @@
+@use '../base/minxis' as m;
+
 .proyects {
-    padding-block: 2rem;
+    padding-block: 4rem 2rem;
 
     &__title {
         text-align: center;
+        font-size: 1.75rem;
+        font-weight: 900;
+        margin-block-end: 5rem;
     }
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    @include m.phone {
+        &__title {
+            font-size: 2.5rem;
+        } 
+    }
+
+    @include m.desktopXL {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        } 
     }
 }

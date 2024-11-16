@@ -96,14 +96,28 @@ body {
 }
 
 .proyects {
-  padding-block: 2rem;
+  padding-block: 4rem 2rem;
 }
 .proyects__title {
   text-align: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-block-end: 5rem;
 }
 .proyects__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+@media (min-width: 480px) {
+  .proyects__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1366px) {
+  .proyects__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
 }
 
 .proyectCard {
