@@ -2,9 +2,14 @@
 @use '../base/minxis' as m;
 
 .header {
-
     padding-block: 1.5rem;
     margin-block-end: 1rem;
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
+    animation: header-design linear both ;
+    animation-timeline: scroll();
+    animation-range: 0 150px;
 
     &__wrapper {
         display: flex;
@@ -28,5 +33,14 @@
             justify-content: flex-end;
             gap: 1rem;
         }
+    }
+}
+
+@keyframes header-design {
+    to {
+        box-shadow: 0 5px 50px -5px #ffffff1a,0 0 0 1px #ffffff1a;
+        background: rgba($color: v.$colorPurple, $alpha: 0.9);
+        padding-block:1rem;-webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 }

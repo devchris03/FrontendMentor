@@ -35,6 +35,7 @@ body {
   background-repeat: repeat;
   background-color: #2a1d42;
   color: #EEF0F1;
+  position: relative;
 }
 
 .wrapper {
@@ -51,6 +52,12 @@ body {
 .header {
   padding-block: 1.5rem;
   margin-block-end: 1rem;
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 1;
+  animation: header-design linear both;
+  animation-timeline: scroll();
+  animation-range: 0 150px;
 }
 .header__wrapper {
   display: flex;
@@ -72,6 +79,15 @@ body {
   }
 }
 
+@keyframes header-design {
+  to {
+    box-shadow: 0 5px 50px -5px rgba(255, 255, 255, 0.1019607843), 0 0 0 1px rgba(255, 255, 255, 0.1019607843);
+    background: rgba(42, 29, 66, 0.9);
+    padding-block: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
 .hero__title {
   text-align: center;
   font-weight: 900;
