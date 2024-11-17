@@ -14,6 +14,8 @@ Podrás visualizar el deploy de cada proyecto y su código. Asi mismo cada uno c
 ## 💻 Proyectos
 * [QR Code](https://github.com/devchris03/qr-code)
 
+* [Blog Card](https://github.com/devchris03/blog-preview-card)
+
 ## :globe_with_meridians: Redes
 Linkedin - [Christina Pascual](https://www.linkedin.com/in/christina-pascual/)
 
