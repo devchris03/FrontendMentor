@@ -18,6 +18,8 @@ Podrás visualizar el deploy de cada proyecto y su código. Asi mismo cada uno c
 
 * [Social Link](https://github.com/devchris03/social-links)
 
+* [Recipe Omelette](https://github.com/devchris03/Recipe)
+
 ## :globe_with_meridians: Redes
 Linkedin - [Christina Pascual](https://www.linkedin.com/in/christina-pascual/)
 
