@@ -148,7 +148,7 @@ body {
 }
 .proyectCard__img {
   inline-size: 100%;
-  aspect-ratio: 0.95;
+  block-size: auto;
 }
 .proyectCard__description {
   opacity: 0.5;
